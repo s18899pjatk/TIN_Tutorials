@@ -1,0 +1,65 @@
+body {
+  background-image: url("./assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+}
+.content {
+  border: 3px dotted black;
+  background-color: bisque;
+}
+
+.banner {
+  border: 1px solid black;
+
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.mainContent {
+  margin: 10px;
+}
+
+h1,
+h3 {
+  border-bottom: 1px solid black;
+  max-width: 500px;
+}
+
+article {
+  margin: 20px;
+  border: 1px solid black;
+  word-wrap: break-word;
+  max-width: 500px;
+  background-color: lightgrey;
+}
+
+p {
+  margin: 10px;
+}
+
+a {
+  font-style: italic;
+  text-decoration: none;
+}
+
+a:hover {
+  color: yellow;
+}
+
+.footer {
+  font-style: italic;
+  padding-bottom: 5px;
+}
+
+h1:before,
+h3:before {
+  content: url("assets/icon.png");
+  margin-right: 10px;
+}

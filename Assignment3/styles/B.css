@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.gallery {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+h1,
+h2,
+blockquote {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+p,
+figcaption {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bannerImg {
+  transform: rotate(5deg);
+  border-radius: 10%;
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(3px 3px 3px #222);
+}
+
+.galleryImg {
+  width: 350px;
+  height: 200px;
+}
+
+.article {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+  margin: 10px;
+}
+
+.articleImg {
+  width: 100px;
+  height: 100px;
+  float: left;
+  clear: both;
+  margin: 10px;
+  border-radius: 5%;
+}
+
+.pquote {
+  float: right;
+  width: 120px;
+  font-style: italic;
+  margin: 10px 15px 10px 0;
+  color: red;
+}
+
+blockquote {
+  margin: 0;
+}
+
+.footer {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: center;
+}
+
+@media all and (max-width: 1300px) {
+  .article {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+}
+@media all and (max-width: 1050px) {
+  .article {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .gallery {
+    grid-row: 3;
+  }
+  .article {
+    grid-column: 1;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+}

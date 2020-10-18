@@ -1,0 +1,32 @@
+body {
+  background-color: linen;
+  margin: 10px;
+}
+
+h1 {
+  color: rgb(148, 5, 24);
+  font-style: normal;
+  font-size: 40px;
+}
+
+p {
+  color: rgb(0, 19, 128);
+  font-style: oblique;
+  font-size: 20px;
+}
+
+table,
+th,
+td {
+  border: 2px dotted aqua;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li::marker {
+  color: blue;
+  font-size: 1.2em;
+}
