@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.radioBtns {
+  display: flex;
+  flex-direction: row;
+}
+
+.container > div {
+  margin: 10px;
+}
+
+.wrongInput {
+  border-color: red;
+}
+
+.correctInput {
+  border-color: gray;
+}
+table,
+th,
+td {
+  border: 1px solid gray;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script/C.js"></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <title>C</title>
+  </head>
+  <body>
+    <div class="container">
+      <label for="phoneNumber">PhoneNumber:</label>
+      <input
+        type="text"
+        id="phoneNumber"
+        name="phoneNumber"
+        class="correctInput"
+      />
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" class="correctInput" />
+      <label id="error" style="color: red"></label>
+      <br />
+      <button type="button" onclick="dumbValidation()">Submit</button>
+    </div>
+  </body>
+</html>
