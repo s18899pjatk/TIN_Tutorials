@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="/formdata" method="POST">
+      <label for="login" class="important">Name</label>
+      <input name="login" id="login" type="text" value="<%= auth.name %>" />
+      <label for="email" class="important">Email</label>
+      <input name="email" id="email" value="<%= auth.email %>" />
+      <label for="password" class="important">Password</label>
+      <input name="password" id="password" value="<%= auth.password %>" />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
