@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.navbar {
+  margin-bottom: 30px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.pagination > .active > button {
+  color: white !important;
+  background-color: #282c34 !important;
+  border: solid 1px #282c34 !important;
+}
+
+.pagination > li > button {
+  color: #282c34 !important;
+}
+
+.list-group > .active {
+  color: white;
+  background-color: #282c34 !important;
+  border: solid 1px #282c34 !important;
+}
+
+.switcher {
+  position: absolute;
+  right: 0px;
+}
+
+.languageSwitcher {
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-position-y: -390px;
+  margin: auto 0;
+  background-size: 100% 800px;
+  background-repeat: no-repeat;
+}
+
+.lang {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lang > .dropdown {
+  position: relative;
+  left: 0;
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lang:hover > .dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lang:hover > .dropdown > li {
+  margin: 0;
+  display: block;
+  padding: 5px 0;
+}
+
+.lang:hover > .dropdown > li > div:hover {
+  width: 45px;
+  height: 45px;
+}
+
+.en {
+  background-image: url("./assets/united-kingdom.svg");
+  width: 40px;
+  height: 40px;
+}
+
+.rus {
+  background-image: url("./assets/russia.svg");
+  width: 40px;
+  height: 40px;
+}
+
+.pl {
+  background-image: url("./assets/poland.svg");
+  width: 40px;
+  height: 40px;
+}
